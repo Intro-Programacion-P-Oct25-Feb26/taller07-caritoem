@@ -47,6 +47,7 @@ public class Problemaa1 {
 
             sumaE = sumaE + edad;
             sumaES = sumaES + estatura;
+            mensajeE = String.format("%s%d\n", mensajeE, edad);
 
             mensajeF = String.format("%s %s - %s -, edad %d, estatura %.2f\n",
                      mensajeF, nombre, posicion, edad, estatura);
@@ -59,9 +60,12 @@ public class Problemaa1 {
         edadT = sumaE / 5;
         estaturaT = sumaES / 5;
 
-        System.out.printf("Listado de jugadores:\n%s\n"
-                + "Promedio total de edades: %d\n"
-                + "Promedio total de estatura: %.2f", mensajeF, edadT, estaturaT);
+      System.out.printf("Listado de jugadores:\n%s\n"
+                + "Listado de edades: \n%s\nPromedio total de edades: %d\n"
+                + "Promedio total de estatura: %.2f", mensajeF, mensajeE, edadT
+                , estaturaT);
+        
+        
     }
     
 }
